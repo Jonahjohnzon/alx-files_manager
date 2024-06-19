@@ -3,7 +3,6 @@ import AppController from '../controllers/AppController';
 import UsersController from '../controllers/UsersController';
 import AuthController from '../controllers/AuthController';
 
-
 const router = express.Router();
 
 const routeController = (app) => {
@@ -33,7 +32,6 @@ const routeController = (app) => {
   router.get('/users/me', (req, res) => {
     UsersController.getMe(req, res);
   });
-
 };
 
 export default routeController;
